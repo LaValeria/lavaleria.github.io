@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+       
+        <title>Some basic JS play</title>
+        
+    <style>
+        
+    .my-button {
+      
+       cursor: pointer;
+    }   
+        
+    </style>
+       
+    </head>
+    
+    
+    <body>
+    
+    <!-- some basic elements of JS 
+    ´Button´ is still Html, but we add a JS element, it´s inside the " " (can be written also as single quotes-->
+    
+     <p class="my-button" onclick='alert("Ciaone!")'>Click Me!</p>
+     <p>
+     
+     <button onclick='alert("Ciaone!")'>Click Me!</button>
+     </p>
+     <!-- button can be replaced with a simple p, it is still working but shows the results in a different way of course-->
+     <p>
+     <button onclick='document.getElementById("my-result").innerHTML = 10+10'>What is 10+10?</button>
+     </p>
+     
+     <p>
+      Result: <span id="my-result"></span>
+     </p>
+    
+    </body>
+    
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+       
+        <title>Valeria Toniello | Home</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            
+            body {
+             background-color: darkgreen;
+            }
+             
+            #button-off {
+             display: none;    
+            }
+            
+            header {
+            padding: 0.5em 0;
+            text-align: center;
+            }
+            
+/** 
+General Nav
+**/
+            #mobile-nav,
+            #desktop-nav {
+                display: none; 
+            }
+            
+            nav ul {
+                list-style-type: none;
+            }
+            
+            nav a {
+            color: black;
+            background-color: grey;
+            font-weight: 600;
+            text-transform: lowercase;
+            text-align: center;
+            } 
+            
+            
+/** 
+Mobile Nav
+**/     
+            .burger-icon {
+             width: 40px;
+             height: 40px;
+             background-color: darkolivegreen;
+            }
+            
+            #mobile-nav {
+            text-align: center;
+            font-size: 3em;
+            }
+            
+            #mobile-nav ul {
+            margin-top: 13px;
+            }
+            
+            #mobile-nav ul li a:hover {
+            color: #fff;
+            background-color: purple;
+            text-decoration: underline overline dotted rgb(255,128,0);
+            }
+                   
+        
+/** 
+Desktop Nav
+**/   
+                
+            
+            
+            #desktop-nav {
+            text-transform: lowercase;
+            }
+            
+            #desktop-nav ul {
+            text-align: center;
+            }
+            
+            #desktop-nav ul li {
+            display: inline-block;
+            margin-bottom: 10px;
+            }
+            
+            #desktop-nav ul li a {  
+            padding: 2px 8px;
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: inherit;
+            color:black;
+            background-color:rgb(255,128,0);
+            font-weight: 600; 
+            }
+            
+            #desktop-nav ul li a:hover  {
+            color: #fff;
+            background-color: purple;
+            /*alt color rgb(255,128,0)*/
+            }
+            
+            
+/*-------------------
+Responsive Design
+-------------------*/
+           
+            @media only screen and (min-width:600px) {
+             
+            #desktop-nav {
+                display: block;
+            }    
+            
+            #mobile-nav {
+                display: none;
+            }   
+                
+            body {
+            background-image: url(img/autumn-1292948_1280.png);
+                }  
+                
+            .burger-icon {
+                display: none;
+                } 
+            }
+            
+        </style>
+        
+        <script>
+        function showMobileMenu() {
+          document.getElementById('mobile-nav').style.display = 'block'; 
+          document.getElementById('button-on').style.display = 'none';
+          document.getElementById('button-off').style.display = 'block';
+          }
+        
+        function hideMobileMenu() {
+          document.getElementById('mobile-nav').style.display = 'none';
+          document.getElementById('button-off').style.display = 'none';
+          document.getElementById('button-on').style.display = 'block';
+          }
+        
+        </script>
+        
+    </head>
+    
+    <body>
+       
+        <header>
+            <h1>Welcome</h1>
+            <hr >
+             
+              <div id="button-on" class="burger-icon" onclick="showMobileMenu()">
+              
+              </div>
+              
+              <div id="button-off" class="burger-icon" onclick="hideMobileMenu()">
+              
+              </div>
+            
+            <nav id="mobile-nav">
+                
+                <ul>
+                    <li><a ref="#">About Me</a></li>
+                    <li><a ref="#">Studies and Jobs</a></li>
+                    <li><a ref="#">Skills</a></li>
+                    <li><a ref="#">Volunteering</a></li>
+                    <li><a ref="#">Legal Info</a></li>
+               </ul>   
+           </nav>
+             
+            <nav id="desktop-nav">
+              
+                <ul>
+                    <li><a ref="#">About Me</a></li>
+                    <li><a ref="#">Studies and Jobs</a></li>
+                    <li><a ref="#">Skills</a></li>
+                    <li><a ref="#">Volunteering</a></li>
+                    <li><a ref="#">Legal Info</a></li>
+               </ul>   
+            </nav>
+            
+        </header>
+        
+        <section>
+        
+            
+        </section>
+        
+        <aside>
+         
+        </aside>
+        
+        
+    </body>
+    
+    
+</html>
