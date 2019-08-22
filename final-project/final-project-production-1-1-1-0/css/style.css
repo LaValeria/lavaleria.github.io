@@ -38,6 +38,7 @@ body {
 p {
   line-height: 1.5em;  
   margin: 1em 20px;
+  font-size: 15px;
 }
 
 /*
@@ -57,10 +58,9 @@ header {
 }
 
 .column {
-    width:300px;
-    float:left;
+    width: 300px;
+    float: left;
     text-align: center;
-    
 }
 
 #me {
