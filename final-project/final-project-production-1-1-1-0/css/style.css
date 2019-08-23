@@ -12,8 +12,8 @@ Reset
 */
 
   * {
-    /*margin: 0;
-    padding: 0;*/
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -58,22 +58,27 @@ header {
 }
 
 body.content-page main section .column {
-    text-align: center;
+    text-align: left;
     font-size: 15px;
     line-height: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+main {
+    min-height: 50vh;
+    padding-bottom: 0.5em;
 }
 
 footer {
-     padding-top: 2em;
-     padding-bottom: 0.3em;  
+     padding-top: 0.4em;
+     padding-bottom: 0.1em;
+     text-align: center;
+     width: 100%;
 }
 
 #me {
     border-radius:7em;
 }
-    
-
-
 
 /*
 General Navigation
@@ -172,10 +177,14 @@ body {
 
 header {
     background-color: aliceblue;
+    
+}
+hr.line {
+    border: 1px solid rgb(199, 152, 142);
+    
 }
 
 footer {
-    background-color: aliceblue; 
     color: black;
 }
 
@@ -189,15 +198,17 @@ Responsive Design
              
             #desktop-nav {
                 display: block;
+                padding-top: 1em;
             }    
             
             #mobile-nav {
                 display: none;
             }   
                 
-            body {
+            main {
             background-image:url(../img/bokeh-2382993_1920.jpg);
             background-color: aquamarine;
+            padding-top: 1em;
             }  
     /*Layout*/
 
