@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+      <title>Valeria Toniello | Home</title>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="stylesheet" href="css/style.css">
+
+      <script>
+       
+        function showMobileMenu() {
+          document.getElementById('mobile-nav').style.display = 'block'; 
+          document.getElementById('button-on').style.display = 'none';
+          document.getElementById('button-off').style.display = 'block';
+          }
+        
+        function hideMobileMenu() {
+          document.getElementById('mobile-nav').style.display = 'none';
+          document.getElementById('button-off').style.display = 'none';
+          document.getElementById('button-on').style.display = 'block';
+          }
+    </script> 
+      
+  </head>  
+    
+  <body class="homepage">
+      <header>
+            <h1>Welcome</h1>
+            <hr class="line">
+            
+             <div id="button-on" class="burger-icon" onclick="showMobileMenu()">
+             </div>
+              
+              <div id="button-off" class="burger-icon" onclick="hideMobileMenu()">
+             </div>
+             
+            <nav id="mobile-nav">
+               
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="studies-jobs.html">Studies and Jobs</a></li>
+                    <li><a href="skills-projects.html">Skills and projects</a></li>
+                    <li><a href="legal.html">Legal Information</a></li>
+               </ul>   
+           </nav>
+             
+            <nav id="desktop-nav">
+              
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="studies-jobs.html">Studies and Jobs</a></li>
+                    <li><a href="skills-projects.html">Skills and Projects</a></li>
+                    <li><a href="legal.html">Legal Information</a></li>
+               </ul>   
+            </nav>
+      </header>
+      <main>
+          <section>
+          <div class="img-wrapper-1">
+          <img src="img/val-di-fassa-1331004_1920.jpg" width="100%" alt="About Me"> 
+          </div>
+          <p><a href="aboutme.html">About Me</a>   
+          </p>  
+          </section>
+          
+          <section>
+          <div class="img-wrapper-2">
+          <img src="img/books-768426_1920.jpg" width="100%" alt="Studies And Jobs">
+          </div>
+          <p><a href="studies-jobs.html">Studies and Job</a>
+          </p> 
+          </section>
+           
+          <section>
+          <div class="img-wrapper-3">
+          <img src="img/clay-1220105_1920.jpg" width="100%" alt="Skills and Projects">
+          </div>
+          <p> <a href="skills-projects.html">  Skills and Projects</a>
+          </p> 
+         </section>
+          
+          <section>
+          <div class=img-wrapper-4>
+          <img src="img/europe-3256079_1920.jpg" width="100%" alt="Legal Information"> 
+          </div>  
+          <p> <a href="legal.html"> Legal Information</a>  
+          </p>   
+          </section>
+          
+      </main>
+      <footer>
+       <p>
+        Valeria Toniello | 2019
+       </p>
+      </footer>
+  </body>
+
+</html>
