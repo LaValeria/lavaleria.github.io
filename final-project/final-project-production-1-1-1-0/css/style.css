@@ -26,7 +26,7 @@ nav ul {
 Typography
 */
 
-header h1{
+header h1 {
     font-family: 'Leckerli One', cursive;
     font-size: 3em;
 }
@@ -45,7 +45,7 @@ p {
 Layout
 */
 
-h1,h2,
+h1,h2, h3,
 p, 
 nav ul {
     padding-left: 20px;
@@ -57,22 +57,23 @@ header {
     text-align: center;
 }
 
-.column {
-    width: 300px;
-    float: left;
+body.content-page main section .column {
     text-align: center;
+    font-size: 15px;
+    line-height: 1.5em;
 }
-
-#me {
-    border-radius: 7em;
-}
-    
-
 
 footer {
      padding-top: 2em;
      padding-bottom: 0.3em;  
 }
+
+#me {
+    border-radius:7em;
+}
+    
+
+
 
 /*
 General Navigation
@@ -165,7 +166,10 @@ Colours and Style
 body {
     background-color: aquamarine;
     }
-    
+.bold-words {
+    font-weight:700;
+}    
+
 header {
     background-color: aliceblue;
 }
@@ -174,6 +178,8 @@ footer {
     background-color: aliceblue; 
     color: black;
 }
+
+
  
 /*
 Responsive Design
@@ -210,7 +216,7 @@ Responsive Design
                height: 20vw;
                  }
         
-            body.homepage main section div {
+        body.homepage main section div {
                 position: relative;
                 height: 22vw;
                 overflow: hidden;
@@ -221,8 +227,17 @@ Responsive Design
         body.homepage main section img {
             width: 200%;
             position: absolute;
-            
         }
+        
+        body.content-page main section {
+            display: flex;
+            margin: 0 auto;
+        }  
+        
+        body.content-page main section .column {
+         width: 300px;   
+        }
+        
         .img-wrapper-1 img {
             left: -10vw;
             top: -2vw;
@@ -236,8 +251,8 @@ Responsive Design
         .img-wrapper-4 img {
             left: -9vw;
         }
-            .burger-icon {
-                display: none;
+        
+        .burger-icon {
+        display: none;
                 } 
-            }
             
