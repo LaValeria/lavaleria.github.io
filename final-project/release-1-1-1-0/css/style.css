@@ -1,4 +1,5 @@
 /*
+------ Valeria Toniello ------
 Stylesheet for final project, MAT21a, DCI Berlin
 */
 
@@ -22,6 +23,7 @@ nav ul {
     text-align: center;
 }
 
+
 /*
 Typography
 */
@@ -41,11 +43,12 @@ p {
   font-size: 15px;
 }
 
+
 /*
 Layout
 */
 
-h1,h2,h3,
+h1,h2, h3,
 p, 
 nav ul {
     padding-left: 20px;
@@ -64,9 +67,11 @@ body.content-page main section .column {
     padding-bottom: 0.5em;
 }
 
-main {
+section {
     min-height: 50vh;
     padding-bottom: 0.5em;
+    display:flex;
+    flex-flow: column;
 }
 
 footer {
@@ -80,11 +85,15 @@ footer {
     border-radius:7em;
 }
 
+
 /*
 General Navigation
 */
 
-#mobile-nav,
+#mobile-nav {
+    display: block; 
+} 
+
 #desktop-nav {
     display: none; 
 }
@@ -101,17 +110,12 @@ nav a {
   text-transform: lowercase;
   text-align: center;
 } 
-                     
+
+
 /** 
 Mobile Nav
 **/     
-
-.burger-icon {
-  width: 40px;
-  height: 40px;
-  background-color: aqua;
-}
-            
+       
 #mobile-nav {
  text-align: center;
  font-size: 3em;
@@ -126,14 +130,15 @@ Mobile Nav
  background-color: rgb(199, 152, 142);
  text-decoration: underline overline yellow;
 }
-                   
+
+  
+
 /** 
 Desktop Nav
 **/   
                  
 #desktop-nav {
     text-transform: lowercase;
-    
 }
             
 #desktop-nav ul {
@@ -151,7 +156,8 @@ Desktop Nav
     margin-bottom: 10px;
     text-decoration: inherit;
     color:black;
-    background-color:rgb(63, 103, 73);
+    background-color:aquamarine;
+        /*rgb(63, 103, 73);*/
     /*alt color rgb(255, 220, 71)*/
     font-weight: 600; 
     border-radius: 7px;
@@ -162,7 +168,7 @@ Desktop Nav
     background-color: rgb(199, 152, 142);
     /*alt color rgb(255,128,0)*/
 }
-            
+          
 
 /*
 Colours and Style
@@ -171,23 +177,22 @@ Colours and Style
 body {
     background-color: aquamarine;
     }
+
 .bold-words {
     font-weight:700;
 }    
 
 header {
-    background-color: aliceblue;
-    
+    background-color: aliceblue;    
 }
+
 hr.line {
-    border: 1px solid rgb(199, 152, 142);
-    
+    border: 2px solid rgb(199, 152, 142);
 }
 
 footer {
     color: black;
 }
-
 
  
 /*
@@ -197,8 +202,8 @@ Responsive Design
 @media only screen and (min-width:600px) {
              
             #desktop-nav {
-            display: block;
-             padding-top: 1em;
+                display: block;
+                padding-top: 1em;
             }    
             
             #mobile-nav {
@@ -210,65 +215,59 @@ Responsive Design
             background-color: aquamarine;
             padding-top: 1em;
             }  
-        
-        
-/*Layout*/
-
-        main {
+    
+           .main-column{
             display: flex;
+            flex-flow: row;
+             }
+ }
+      
 
-        }   
+    /*Layout*/
 
+main {
+    display: flex;
+ }   
         
-        body.homepage main section {
-                      margin: 0 2vw; 
-                      
-        }
-        
-        body.homepage main section  {
+body.homepage main section {
+    margin: 0 2vw;  
+    width: 22vw;
+    height: 20vw;
+}    
 
-            width: 22vw;
-            height: 20vw;
-                 }
-        
-        body.homepage main section div {
-                position: relative;
-                height: 22vw;
-                overflow: hidden;
-                border-radius: 9px;
-            }            
+body.homepage main section div {
+    position: relative;
+    height: 22vw;
+    overflow: hidden;
+    border-radius: 9px;
+}            
             
+body.homepage main section img {
+    width: 200%;
+    position: absolute;
+}
         
-        body.homepage main section img {
-            width: 200%;
-            position: absolute;
-            
-        }
+body.content-page main section {
+    display: flex;
+    margin: 0 auto;
+}  
         
-        body.content-page main section {
-            display: flex;
-            margin: 0 auto;
-        }  
+body.content-page main section .column {
+    width: 300px;   
+}
         
-        body.content-page main section .column {
-         width: 300px;   
+  .img-wrapper-1 img {
+    left: -10vw;
+    top: -2vw;
         }
-        
-        .img-wrapper-1 img {
-            left: -10vw;
-            top: -2vw;
+  .img-wrapper-2 img {
+    left: -2vw;
         }
-        .img-wrapper-2 img {
-            left: -2vw;
+  .img-wrapper-3 img {
+    left: -4vw;
         }
-        .img-wrapper-3 img {
-           left: -4vw;
-        }
-        .img-wrapper-4 img {
-            left: -9vw;
+  .img-wrapper-4 img {
+    left: -9vw;
         }
         
-        .burger-icon {
-        display: none;
-                } 
-            
+    
