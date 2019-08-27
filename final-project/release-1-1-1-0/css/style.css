@@ -65,6 +65,7 @@ body.content-page main section .column {
     font-size: 15px;
     line-height: 1.5em;
     padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 section {
@@ -124,7 +125,11 @@ Mobile Nav
 #mobile-nav ul {
  margin-top: 13px;
 }
-            
+ 
+#mobile-nav ul li a {
+    background-color: aquamarine;
+}
+
 #mobile-nav ul li a:hover {
  color: #fff;
  background-color: rgb(199, 152, 142);
@@ -220,10 +225,11 @@ Responsive Design
             display: flex;
             flex-flow: row;
              }
+
  }
       
 
-    /*Layout*/
+/*Layout*/
 
 main {
     display: flex;
