@@ -1,6 +1,7 @@
 /*
 ------ Valeria Toniello ------
 Stylesheet for final project, MAT21a, DCI Berlin
+------ version 1-1-1-0 -----
 */
 
 @import url('https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap');
@@ -22,7 +23,6 @@ nav ul {
     list-style-type: none;
     text-align: center;
 }
-
 
 /*
 Typography
@@ -104,22 +104,16 @@ nav ul {
     text-align: center;
 }
             
-nav a {
-  color: black;
-  background-color: grey;
-  font-weight: 600;
-  text-transform: lowercase;
-  text-align: center;
-} 
-
 
 /** 
 Mobile Nav
 **/     
-       
+
+
 #mobile-nav {
  text-align: center;
  font-size: 3em;
+ text-transform:lowercase;
 }
             
 #mobile-nav ul {
@@ -136,7 +130,9 @@ Mobile Nav
  text-decoration: underline overline yellow;
 }
 
-  
+.homepage-pics-menu {
+    display: none;
+}
 
 /** 
 Desktop Nav
@@ -226,6 +222,9 @@ Responsive Design
             flex-flow: row;
              }
 
+           .homepage-pics-menu {
+            display: flex;
+             }
  }
       
 
